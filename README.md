@@ -1,6 +1,6 @@
 # AI HTML Template
 
-A modern SaaS HTML template built with HTML, CSS, JavaScript, and Vite.
+A modern SaaS HTML template built with HTML, CSS, JavaScript, Vite, and Tailwind CSS.
 
 ## Tech Stack
 
@@ -8,6 +8,7 @@ A modern SaaS HTML template built with HTML, CSS, JavaScript, and Vite.
 - CSS3
 - JavaScript
 - Vite
+- Tailwind CSS
 - npm
 
 ## Getting Started
