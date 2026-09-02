@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+/* ========================================
+   Fonts
+   ======================================== */
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("./assets/fonts/instrument-serif/InstrumentSerif-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Serif";
+  src: url("./assets/fonts/instrument-serif/InstrumentSerif-Italic.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+/* ========================================
+   Design Tokens
+   ======================================== */
+
+@theme {
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Instrument Serif", serif;
+
+  /* Colors */
+  --color-background: #f7f7f5;
+  --color-surface: #ffffff;
+
+  --color-foreground: #111111;
+  --color-muted: #6b6b6b;
+  --color-subtle: #8a8a86;
+
+  --color-border: #e5e5e2;
+  --color-border-strong: #d8d8d3;
+
+  --color-accent: #5b5ce2;
+  --color-accent-hover: #4b4ccf;
+  --color-accent-foreground: #ffffff;
+
+  --color-success: #16845b;
+  --color-warning: #b7791f;
+  --color-danger: #c43d3d;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* ========================================
+   Base
+   ======================================== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  button,
+  a,
+  input,
+  textarea,
+  select {
+    transition-duration: 200ms;
+    transition-timing-function: var(--ease-standard);
+  }
+
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
+}
+
+
+/* ========================================
+   Utilities
+   ======================================== */
+
+@utility container-page {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 20px;
+
+  @media (min-width: 768px) {
+    padding-inline: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-inline: 32px;
+  }
+}
+
+@utility section-padding {
+  padding-block: 72px;
+
+  @media (min-width: 768px) {
+    padding-block: 96px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-block: 128px;
+  }
+}

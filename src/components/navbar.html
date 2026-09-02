@@ -1,0 +1,205 @@
+<header
+  id="site-header"
+  class="fixed inset-x-0 top-0 z-50 border-b border-transparent bg-transparent transition-all duration-300"
+>
+  <nav
+    class="container-page flex h-20 items-center justify-between"
+    aria-label="Main navigation"
+  >
+    <!-- Logo -->
+    <a
+      href="/"
+      class="flex items-center gap-2 text-lg font-semibold tracking-tight"
+      aria-label="AI SaaS home"
+    >
+      <span class="flex h-9 w-9 items-center justify-center rounded-md text-sm font-bold text-background">
+        <img src="/src/assets/img/logo.webp" alt="Logo" class="h-9 w-9" />
+      </span>
+
+      <span>Cerita Studio</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden items-center gap-8 md:flex">
+      <a
+        href="#features"
+        class="text-sm font-medium text-muted transition-colors hover:text-foreground"
+      >
+        Features
+      </a>
+
+      <!-- Solutions Dropdown -->
+      <div class="relative">
+        <button
+          id="solutions-trigger"
+          type="button"
+          class="flex items-center gap-1 text-sm font-medium text-muted transition-colors hover:text-foreground"
+          aria-expanded="false"
+          aria-controls="solutions-menu"
+        >
+          Solutions
+
+          <svg
+            class="h-4 w-4 transition-transform duration-200"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </button>
+
+        <div
+          id="solutions-menu"
+          class="invisible absolute left-1/2 top-full mt-4 w-56 -translate-x-1/2 translate-y-2 rounded-lg border border-border bg-surface p-2 opacity-0 shadow-lg transition-all duration-200"
+          role="menu"
+        >
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2.5 text-sm text-muted transition-colors hover:bg-background hover:text-foreground"
+            role="menuitem"
+          >
+            Content Creation
+          </a>
+
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2.5 text-sm text-muted transition-colors hover:bg-background hover:text-foreground"
+            role="menuitem"
+          >
+            Marketing Teams
+          </a>
+
+          <a
+            href="#"
+            class="block rounded-md px-3 py-2.5 text-sm text-muted transition-colors hover:bg-background hover:text-foreground"
+            role="menuitem"
+          >
+            Product Teams
+          </a>
+        </div>
+      </div>
+
+      <a
+        href="/pricing.html"
+        class="text-sm font-medium text-muted transition-colors hover:text-foreground"
+      >
+        Pricing
+      </a>
+
+      <a
+        href="#resources"
+        class="text-sm font-medium text-muted transition-colors hover:text-foreground"
+      >
+        Resources
+      </a>
+    </div>
+
+    <!-- Desktop Actions -->
+    <div class="hidden items-center gap-3 md:flex">
+      <a
+        href="/auth/login.html"
+        class="px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
+      >
+        Sign in
+      </a>
+
+      <a
+        href="/auth/register.html"
+        class="rounded-md bg-foreground px-4 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-accent"
+      >
+        Get started
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="mobile-menu-trigger"
+      type="button"
+      class="flex h-10 w-10 items-center justify-center rounded-md border border-border bg-surface md:hidden"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Open navigation menu"
+    >
+      <svg
+        id="menu-icon"
+        class="h-5 w-5"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        aria-hidden="true"
+      >
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+
+      <svg
+        id="close-icon"
+        class="hidden h-5 w-5"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        aria-hidden="true"
+      >
+        <path d="m6 6 12 12M18 6 6 18" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-border bg-surface md:hidden"
+  >
+    <div class="container-page py-5">
+      <div class="flex flex-col gap-1">
+        <a
+          href="#features"
+          class="rounded-md px-3 py-3 text-sm font-medium text-muted hover:bg-background hover:text-foreground"
+        >
+          Features
+        </a>
+
+        <a
+          href="#solutions"
+          class="rounded-md px-3 py-3 text-sm font-medium text-muted hover:bg-background hover:text-foreground"
+        >
+          Solutions
+        </a>
+
+        <a
+          href="/pricing.html"
+          class="rounded-md px-3 py-3 text-sm font-medium text-muted hover:bg-background hover:text-foreground"
+        >
+          Pricing
+        </a>
+
+        <a
+          href="#resources"
+          class="rounded-md px-3 py-3 text-sm font-medium text-muted hover:bg-background hover:text-foreground"
+        >
+          Resources
+        </a>
+      </div>
+
+      <div class="mt-4 flex flex-col gap-2 border-t border-border pt-4">
+        <a
+          href="/auth/login.html"
+          class="rounded-md px-3 py-3 text-sm font-medium text-muted hover:bg-background hover:text-foreground"
+        >
+          Sign in
+        </a>
+
+        <a
+          href="/auth/register.html"
+          class="rounded-md bg-foreground px-4 py-3 text-center text-sm font-semibold text-background"
+        >
+          Get started
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
