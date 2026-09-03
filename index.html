@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <div data-component="head"></div>
+    <template data-component="head"></template>
     <meta name="description" content="A modern AI SaaS website template."/>
     <title>AI SaaS Template</title>
   </head>
@@ -16,7 +16,32 @@
       <div data-component="ai-showcase"></div>
       <div data-component="workflow"></div>
       <div data-component="testimonials"></div>
-      <div data-component="pricing"></div>
+      
+      <section class="section-padding" aria-labelledby="pricing-title">
+        <div class="container-page">
+          <!-- Header -->
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              Pricing
+            </p>
+
+            <h2 id="pricing-title" class="mt-5 text-5xl leading-[0.98] tracking-tight font-serif sm:text-6xl lg:text-7xl">
+              Simple plans.
+              <span class="text-muted">
+                Room to grow.
+              </span>
+            </h2>
+
+            <p class="mx-auto mt-7 max-w-xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
+              Choose the workspace that fits how you create,
+              collaborate, and grow.
+            </p>
+          </div>
+
+          <div data-component="pricing"></div>
+        </div>
+      </section>
+
       <div data-component="faq"></div>
       <div data-component="final-cta"></div>
     </main>

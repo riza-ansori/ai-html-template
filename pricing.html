@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Simple and flexible pricing for Arc." />
-    <div data-component="head"></div>
+    <meta name="description" content="Simple and flexible pricing for AI Studio." />
+    <template data-component="head"></template>
 
-    <title>Pricing — Arc</title>
+    <title>Pricing - AI Studio</title>
 </head>
 
 <body>
@@ -31,6 +31,358 @@
                 </p>
             </div>
         </section>
+
+        <!-- Pricing Plans -->
+        <section id="pricing" class="pb-24" aria-labelledby="pricing-plans-title">
+            <div class="container-page">
+                <!-- Section Header -->
+                <div class="mx-auto max-w-3xl text-center">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                        Plans & pricing
+                    </p>
+
+                    <h2
+                        id="pricing-plans-title"
+                        class="mt-5 font-serif text-4xl leading-[0.98] tracking-tight sm:text-5xl lg:text-6xl"
+                    >
+                        Choose the workspace
+                        <span class="text-muted">
+                            that fits you.
+                        </span>
+                    </h2>
+                </div>
+
+                <div data-component="pricing"></div>
+            </div>
+        </section>
+
+        <!-- Feature Comparison -->
+        <section class="border-t border-border px-6 py-24" aria-labelledby="comparison-title">
+            <div class="mx-auto max-w-6xl">
+                <!-- Header -->
+                <div class="max-w-2xl">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                        Compare plans
+                    </p>
+
+                    <h2 id="comparison-title" class="mt-5 font-serif text-4xl leading-[0.98] tracking-tight sm:text-5xl lg:text-6xl">
+                        Everything you need.
+                        <span class="text-muted">
+                            Nothing you don't.
+                        </span>
+                    </h2>
+
+                    <p class="mt-6 max-w-xl text-base leading-7 text-muted sm:text-lg sm:leading-8">
+                        Compare features across every plan and choose
+                        the workspace that fits your workflow.
+                    </p>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="mt-12 overflow-x-auto">
+                    <table class="w-full min-w-[760px] border-collapse text-left">
+                        <!-- Table Header -->
+                        <thead>
+                            <tr class="border-b border-border">
+                                <th class="w-[40%] pb-5 pr-6 text-xs font-semibold uppercase tracking-[0.14em]">
+                                    Features
+                                </th>
+
+                                <th class="w-[20%] px-4 pb-5 text-center text-xs font-semibold uppercase tracking-[0.14em]">
+                                    Free
+                                </th>
+
+                                <th class="w-[20%] px-4 pb-5 text-center text-xs font-semibold uppercase tracking-[0.14em]">
+                                    Pro
+                                </th>
+
+                                <th class="w-[20%] px-4 pb-5 text-center text-xs font-semibold uppercase tracking-[0.14em]">
+                                    Team
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!-- AI & Generation -->
+                            <tr>
+                                <th colspan="4" class="border-b border-border pb-4 pt-8 text-sm font-semibold">
+                                    AI & generation
+                                </th>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    AI credits
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    100
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    10,000
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    50,000
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Basic AI generation
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Advanced AI generation
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Priority generation
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <!-- Workspace -->
+                            <tr>
+                                <th colspan="4" class="border-b border-border pb-4 pt-8 text-sm font-semibold">
+                                    Workspace
+                                </th>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Projects
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    3
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    Unlimited
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    Unlimited
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Personal workspace
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Shared workspace
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <!-- Analytics -->
+                            <tr>
+                                <th colspan="4" class="border-b border-border pb-4 pt-8 text-sm font-semibold">
+                                    Analytics
+                                </th>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Basic analytics
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Advanced analytics
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <!-- Collaboration -->
+                            <tr>
+                                <th colspan="4" class="border-b border-border pb-4 pt-8 text-sm font-semibold">
+                                    Collaboration
+                                </th>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Team members
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    1
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    1
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-sm">
+                                    Up to 5
+                                </td>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Shared templates
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <!-- Support -->
+                            <tr>
+                                <th colspan="4" class="border-b border-border pb-4 pt-8 text-sm font-semibold">
+                                    Support
+                                </th>
+                            </tr>
+
+                            <tr class="border-b border-border">
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Community support
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-5 pr-6 text-sm text-muted">
+                                    Priority support
+                                </td>
+
+                                <td class="px-4 py-5 text-center text-muted">
+                                    —
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+
+                                <td class="px-4 py-5 text-center">
+                                    <span aria-label="Included">✓</span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <div data-component="faq"></div>
+
+        <!-- Final CTA -->
+        <div data-component="final-cta"></div>
     </main>
 
   <div data-component="footer"></div>

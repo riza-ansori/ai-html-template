@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <div data-component="head"></div>
-  <title>Login — Arc</title>
+  <template data-component="head"></template>
+  <title>Login - AI Studio</title>
 </head>
 
 <body>
     <div data-component="navbar"></div>
     <main>
-        <h1>Login</h1>
+        <section class="flex min-h-[calc(100vh-5rem)] items-center justify-center px-6 py-20" aria-labelledby="login-title">
+            <div class="w-full max-w-md">
+                <!-- Header -->
+                <div class="text-center">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+                        Welcome back
+                    </p>
+
+                    <h1 id="login-title" class="mt-5 font-serif text-5xl leading-[0.95] tracking-tight sm:text-6xl">
+                        Sign in to
+                        <span class="text-muted">
+                        AI Studio.
+                        </span>
+                    </h1>
+
+                    <p class="mx-auto mt-6 max-w-sm text-sm leading-6 text-muted">
+                        Sign in to continue to your workspace and pick up
+                        where you left off.
+                    </p>
+                </div>
+
+                <!-- Form -->
+                <form class="mt-10">
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-xs font-semibold">
+                            Email address
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            autocomplete="email"
+                            required
+                            class="mt-2 h-11 w-full rounded-md border border-border bg-surface px-3 text-sm outline-none transition-colors placeholder:text-muted/50 focus:border-foreground"
+                            placeholder="you@example.com"
+                        />
+                    </div>
+
+                    <!-- Password -->
+                    <div class="mt-5">
+                        <div class="flex items-center justify-between">
+                            <label for="password" class="block text-xs font-semibold">
+                                Password
+                            </label>
+
+                            <a href="#" class="text-xs text-muted transition-colors hover:text-foreground">
+                                Forgot password?
+                            </a>
+                        </div>
+
+                        <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            autocomplete="current-password"
+                            required
+                            class="mt-2 h-11 w-full rounded-md border border-border bg-surface px-3 text-sm outline-none transition-colors placeholder:text-muted/50 focus:border-foreground"
+                            placeholder="Enter your password"
+                        />
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" class="mt-7 inline-flex h-11 w-full items-center justify-center rounded-md bg-foreground px-5 text-xs font-semibold text-background transition-transform duration-200 hover:-translate-y-0.5 hover:bg-accent">
+                        Sign in
+                    </button>
+                </form>
+
+                <!-- Register -->
+                <p class="mt-7 text-center text-xs text-muted">
+                    Don't have an account?
+                    <a href="/register.html" class="font-semibold text-foreground transition-opacity hover:opacity-60">
+                        Create one
+                    </a>
+                </p>
+            </div>
+        </section>
     </main>
     <div data-component="footer"></div>
     

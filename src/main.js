@@ -7,8 +7,10 @@ async function init() {
   await loadComponents()
 
   const { default: initNavbar } = await import('./js/navbar.js')
-
   initNavbar?.()
+
+  const { default: initPricing } = await import('./js/pricing.js')
+  initPricing?.()
 }
 
 init()

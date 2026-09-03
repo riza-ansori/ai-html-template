@@ -18,7 +18,12 @@ export async function loadComponents() {
 
         const html = await response.text()
 
-        element.outerHTML = html
+        if (element.closest('head')) {
+          element.insertAdjacentHTML('beforebegin', html)
+          element.remove()
+        } else {
+          element.outerHTML = html
+        }
       } catch (error) {
         console.error(error)
       }
