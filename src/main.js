@@ -18,6 +18,11 @@ async function init() {
     const { default: initLogin } = await import('./js/login.js')
     initLogin?.()
   }
+
+  if (document.querySelector('#register-form')) {
+    const { default: initRegister } = await import('./js/register.js')
+    initRegister?.()
+  }
 }
 
 init()
